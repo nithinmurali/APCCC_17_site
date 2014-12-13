@@ -6,7 +6,9 @@
 	margin-left: auto;
 	margin-right: auto;
 	background-color: aliceblue;
-	
+	margin-top: 10px;
+	border-radius: 30px;
+
 }
 .nav{
 	/* height:20px; */
@@ -23,6 +25,10 @@
 }
 .slider{
 	/* height: 40px; */
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    
 }
 
 .back{
@@ -33,4 +39,8 @@
 	top: 9px;
 	position: relative;
 	color: rgb(137, 118, 118);
+}
+
+#nav-wrapper1{
+	
 }
