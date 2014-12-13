@@ -209,21 +209,21 @@ body {
 }
 
 
-#menu2 > .opened-nav li:first-child {
+#menu2  .opened-nav li:first-child {
     -webkit-transform: rotate(-45deg) skew(60deg);
     -moz-transform: rotate(-45deg) skew(60deg);
     -ms-transform: rotate(-45deg) skew(60deg);
     transform: rotate(-45deg) skew(60deg);
 }
 
-#menu2 > .opened-nav li:nth-child(2) {
+#menu2  .opened-nav li:nth-child(2) {
     -webkit-transform: rotate(-13deg) skew(60deg);
     -moz-transform: rotate(-13deg) skew(60deg);
     -ms-transform: rotate(-13deg) skew(60deg);
     transform: rotate(-13deg) skew(60deg);
 }
 
-#menu2 > .opened-nav  li:nth-child(3) {
+#menu2  .opened-nav  li:nth-child(3) {
     -webkit-transform: rotate(18deg) skew(60deg);
     -moz-transform: rotate(18deg) skew(60deg);
     -ms-transform: rotate(18deg) skew(60deg);
@@ -238,28 +238,28 @@ body {
 }
 
 
-#menu1 > .opened-nav li:first-child {
-    -webkit-transform: rotate(-45deg) skew(60deg);
-    -moz-transform: rotate(-45deg) skew(60deg);
-    -ms-transform: rotate(-45deg) skew(60deg);
-    transform: rotate(-45deg) skew(60deg);
+#menu1 .opened-nav li:first-child {
+    -webkit-transform: rotate(128deg) skew(60deg);
+    -moz-transform: rotate(128deg) skew(60deg);
+    -ms-transform: rotate(128deg) skew(60deg);
+    transform: rotate(128deg) skew(60deg);
 }
 
-#menu1 > .opened-nav li:nth-child(2) {
-    -webkit-transform: rotate(-13deg) skew(60deg);
-    -moz-transform: rotate(-13deg) skew(60deg);
-    -ms-transform: rotate(-13deg) skew(60deg);
-    transform: rotate(-13deg) skew(60deg);
+#menu1  .opened-nav li:nth-child(2) {
+    -webkit-transform: rotate(159deg) skew(60deg);
+    -moz-transform: rotate(159deg) skew(60deg);
+    -ms-transform: rotate(159deg) skew(60deg);
+    transform: rotate(159deg) skew(60deg);
 }
 
-#menu1 > .opened-nav  li:nth-child(3) {
-    -webkit-transform: rotate(18deg) skew(60deg);
-    -moz-transform: rotate(18deg) skew(60deg);
-    -ms-transform: rotate(18deg) skew(60deg);
-    transform: rotate(18deg) skew(60deg);
+#menu1 .opened-nav  li:nth-child(3) {
+    -webkit-transform: rotate(190deg) skew(60deg);
+    -moz-transform: rotate(190deg) skew(60deg);
+    -ms-transform: rotate(190deg) skew(60deg);
+    transform: rotate(190deg) skew(60deg);
 }
 
-#menu1 > .opened-nav li:nth-child(4) {
+#menu1 .opened-nav li:nth-child(4) {
     -webkit-transform: rotate(76deg) skew(60deg);
     -moz-transform: rotate(76deg) skew(60deg);
     -ms-transform: rotate(76deg) skew(60deg);
