@@ -239,6 +239,7 @@
 			    
 			  });
 
+			  	//-----------------------Menu Movement ---------------------------------//
 			    $('#menu1').css("left", ( $(".flexslider").offset().left)/3);
 			   
 				function moveFloatMenu() {
@@ -251,8 +252,22 @@
 				$(window).scroll(moveFloatMenu);
 				moveFloatMenu();
 				
+				//---------------------------------------------------------------------------//
+				
+				open = 0;
+
+				$(".has-sub").mouseenter(function(){
+				    $(this).addClass("chkrotate");
+				    $(this).next().addClass('opened-nav');
+				});
 
 				$(".has-sub").click(function(){
+				    $(this).removeClass("chkrotate");
+				    $(this).next().removeClass('opened-nav');
+				});
+
+				/*
+				$(".has-sub").mouseenter(function(){
 					 if(!open){
 				    this.innerHTML = "Close";
 				    $(this).next().addClass('opened-nav');
@@ -262,7 +277,7 @@
 					$(this).next().removeClass('opened-nav');
 				  }
 				  open = !open;
-				});
+				});*/
 
 
 			});
