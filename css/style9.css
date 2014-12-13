@@ -75,11 +75,11 @@ box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75)
     -ms-transform: rotate(-360deg);
     transform: rotate(-360deg);
     -webkit-box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75);
--moz-box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75);
-box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75)
+    -moz-box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75);
+    box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75)
     
 }
-.ca-menu > li:last-child{
+ .ca-menu > li:last-child{
     margin-right: 0px;
 }
 .ca-menu > li a{
@@ -145,7 +145,7 @@ box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75)
     display: none;
 }
 .ca-menu > li:hover .ca-sub{
-    /* opacity: 0.8; */
+    opacity: 0.8;
     opacity: 1;
     color:#2676ac;
 }
@@ -177,9 +177,9 @@ box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75)
 .has-sub {
   z-index: 11;
 }
- .has-sub:hover > ul {
+ /* .has-sub:hover > ul {
   display: block;
-}
+ } */
  .has-sub ul {
   display: none;
   position: absolute;
@@ -203,12 +203,12 @@ box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75)
   padding: 10px;
   color: #ffffff;
 }
- .has-sub ul li:hover a {
+ /* .has-sub ul li:hover a {
   background: #0c82b5;
-}
+ }
  .has-sub .has-sub:hover > ul {
   display: block;
-}
+ } */
  .has-sub .has-sub ul {
   display: none;
   position: absolute;
@@ -219,6 +219,7 @@ box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75)
   background: #0c82b5;
   border-bottom: 1px dotted #0fa1e0;
 }
- .has-sub .has-sub ul li a:hover {
+ /* .has-sub .has-sub ul li a:hover {
   background: #09638a;
-}
+ }
+ */

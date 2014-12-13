@@ -102,11 +102,6 @@
                         <li><a href="#"><span>Home</span></a></li>
                         <li><a href="#"><span>About</span></a></li>
                         <li><a href="#"><span>Portfolio</span></a></li>
-                        <li><a href="#"><span>Blog</span></a></li>
-                        <li><a href="#"><span>Tutorials</span></a></li>
-                        <li><a href="#"><span>Contact</span></a></li>
-                        <li><a href="#"><span>Follow</span></a></li>
-                        
                      </ul>
                 	</div>
 
@@ -257,12 +252,22 @@
 				open = 0;
 
 				$(".has-sub").mouseenter(function(){
-				    $(this).addClass("chkrotate");
+				    $(this).css("-webkit-box-shadow"," 0px 0px 15px 5px rgba(255, 255, 190, .75)");
+				    $(this).css("width","120px");
+				    $(this).css("background","#e1f0fa");
+				    $(this).css("border-color","#ffffff");
+				    $(this).css("height","120px");
+				    
 				    $(this).next().addClass('opened-nav');
 				});
 
 				$(".has-sub").click(function(){
-				    $(this).removeClass("chkrotate");
+				    $(this).css("-webkit-box-shadow"," inset 0px 0px 28px 2px rgba(186, 186, 169, 0.75)");
+				    $(this).css("width","80px");
+				    $(this).css("height","80px");
+				    $(this).css("background","#fff");
+				    $(this).css("border-color","#000000");
+				   
 				    $(this).next().removeClass('opened-nav');
 				});
 
