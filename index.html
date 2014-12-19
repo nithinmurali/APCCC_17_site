@@ -104,7 +104,7 @@
                             </div>
                         </a>
                     </li>
-						<div class="nav-wrapper-left" id="nav-wrapper1">
+						<div class="nav-wrapper-left nav-wrapper" id="nav-wrapper1">
 	                    <ul>
 	                    	<div class="left-arrow" ></div>
 	                        <li>History</li>
@@ -123,12 +123,12 @@
                             </div>
                         </a>
                     </li>
-	                    <div class="nav-wrapper-left" id="nav-wrapper2">
+	                    <div class="nav-wrapper-left nav-wrapper" id="nav-wrapper2">
 	                    <ul>
 	                    	<div class="left-arrow" ></div>
 	                        <li>Plenary Speakers</li>
 	                        <li>Invited Speakers</li>
-	                        <li><a href="#"><span>Program at Glance</span></a></li>
+	                        <li>Program at Glance</li>
 	                     </ul>
 	                	</div>
 
@@ -165,7 +165,7 @@
                         <a href="#">
                             <div class="ca-content">
                                 <h2 class="ca-main">Registration</h2>
-                                <h3 class="ca-sub"> Register !!! </h3>
+                                <h3 class="ca-sub"> Registration</h3>
                             </div>
                             </a>
                          
@@ -176,15 +176,16 @@
                     <li class = "has-sub">
                         <a href="#">
                             <div class="ca-content">
-                                <h2 class="ca-main">Sponsership</h2>
-                                <h3 class="ca-sub">Sponsership</h3>
+                                <h2 class="ca-main">Sponsorship</h2>
+                                <h3 class="ca-sub">Sponsorship</h3>
                             </div>
                         </a>
                     </li>
-		            <div class="nav-wrapper-right" id="nav-wrapper3">
+		            <div class="nav-wrapper-right nav-wrapper" id="nav-wrapper3">
                     <ul>
-                        <li><a href="#"><span>Exhibition</span></a></li>
-                        <li><a href="#"><span>Sponsers</span></a></li>
+                    	<div class="right-arrow" ></div>
+                        <li>Exhibition</li>
+                        <li>Sponsors</li>
                      </ul>
                 	</div>
 
@@ -206,8 +207,8 @@
                         <a href="#">
                             
                             <div class="ca-content">
-                                <h2 class="ca-main">Accomodation</h2>
-                                <h3 class="ca-sub">Acoomodation</h3>
+                                <h2 class="ca-main" style="font-size:14px;">Accommodation</h2>
+                                <h3 class="ca-sub">Accommodation</h3>
                             </div>
                         </a>
                     </li>
@@ -260,9 +261,11 @@
 				    $(this).css("background","#e1f0fa");
 				    $(this).css("border-color","#ffffff");
 				    $(this).css("height","120px");
+				    $(this).children().children().children("h2").css("display","none");
+				    $(this).children().children().children("h3").css("opacity","0.8");
+				    $(this).children().children().children("h3").css("color","#2676ac");
 				    
 				    $(this).next().fadeIn("slow");
-				    console.log("hello");
 				});
 
 				$(".has-sub").click(function(){
@@ -271,6 +274,8 @@
 				    $(this).css("height","80px");
 				    $(this).css("background","#fff");
 				    $(this).css("border-color","#000000");
+				    $(this).children().children().children("h2").css("display","block");
+				    $(this).children().children().children("h3").css("opacity","0");
 				   
 				    $(this).next().fadeOut("slow");
 				});

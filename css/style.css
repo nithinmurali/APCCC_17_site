@@ -41,6 +41,15 @@
 	color: rgb(137, 118, 118);
 }
 
-#nav-wrapper1{
-	
+body {
+    background: #f1f1f1;
+    color: #fff;
+}
+
+.container {
+    position: relative;
+    margin-bottom: 2em;
+    height: 15em;
+    background: rgba(0,0,0,0.09);
+    font-family: Arial, sans-serif;
 }

@@ -28,8 +28,8 @@
     width: 80px;
 }
 .ca-menu > li{
-    width: 80px;
-    height: 80px;
+    width: 86px;
+    height: 86px;
     /* border: 2px solid #f6f6f6; */
     border:2px solid #000000;
     overflow: hidden;
@@ -112,7 +112,7 @@ box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75)
     font-size: 15px;
     font-weight: bold;
     position: absolute;
-    top: 25px;
+    top: 30px;
     height: 70px;
     width: 170px;
     left: 50%;
@@ -129,7 +129,7 @@ box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75)
     width: 170px;
     left: 50%;
     margin-left: -85px;
-    top: 50px;
+    top: 45px;
     opacity: 0;
     -webkit-transition: all 400ms linear;
     -moz-transition: all 400ms linear;
@@ -146,7 +146,6 @@ box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75)
 }
 .ca-menu > li:hover .ca-sub{
     opacity: 0.8;
-    opacity: 1;
     color:#2676ac;
 }
 
@@ -225,13 +224,26 @@ box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75)
  */
 
 #nav-wrapper1{
-top: 155px;
-left: 153px;
+  top: 155px;
+  left: 153px;
 }
 
 #nav-wrapper2{
-top: 258px;
-left: 153px;
+  top: 258px;
+  left: 153px;
+}
+
+#nav-wrapper3{
+  top: 150px;
+  right: 290px;
+}
+
+.nav-wrapper-right{
+  position: absolute;
+  width: 152px;
+  display: none;
+  font-size: large;
+  z-index: 13;
 }
 
 .nav-wrapper-left{
@@ -239,10 +251,10 @@ left: 153px;
   width: 152px;
   display: none;
   font-size: large;
-
+  z-index: 13;
 } 
 
-.nav-wrapper-left ul{
+.nav-wrapper ul{
   -moz-transition-property: opacity, top;
   -o-transition-property: opacity, top;
   -webkit-transition-property: opacity, top;
@@ -269,7 +281,7 @@ left: 153px;
 
 }
 
-.nav-wrapper-left ul li {
+.nav-wrapper ul li {
   z-index: 1;
   overflow: hidden;
   position: relative;
@@ -290,8 +302,10 @@ left: 153px;
   border-bottom: 1px solid #ddd8d7;
 }
 
-.nav-wrapper-left ul li:hover {
+.nav-wrapper ul li:hover {
   background: rgb(225, 240, 250);
+  border-radius: 4px;
+
 }
 
 /* 
@@ -311,4 +325,14 @@ left: 153px;
   position: absolute;
   top: 13px;
   left:-14px;
+}
+.right-arrow {
+  border-color: transparent white;
+border-style: solid;
+border-width: 15px 0px 15px 15px;
+height: 0px;
+width: 0px;
+position: absolute;
+top: 13px;
+right: -15px;
 }
