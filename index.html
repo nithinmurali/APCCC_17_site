@@ -281,7 +281,13 @@
 				$('.nav-wrapper').on('click','li',function(){
 				
 				var text = $(this).text();
-				window.location.href = text.toLowerCase() + ".html";
+				var link  = text.toLowerCase() + ".html";
+				/*window.location.href = text.toLowerCase() + ".html" ;*/
+
+				$.get( "content/" + link , function( data ) {
+				  $( ".content" ).html( data );
+				  alert( "Load was performed." );
+				});
 
 				});
 
