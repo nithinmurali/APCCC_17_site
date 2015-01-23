@@ -20,8 +20,10 @@
 	background-color: #39342d;
 }
 .content{
-	height: 600px;
+	height: auto;
+	min-height: 600px;
 	background-color: white;
+	border-radius: 16px 16px 0px 0px
 }
 .slider{
 	/* height: 40px; */
@@ -32,7 +34,11 @@
 }
 
 .back{
-	background:  url(../images/bgt.jpg) repeat;
+	background: url(../images/bgt.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 }
 .footerText{
 	padding-left: 480px;

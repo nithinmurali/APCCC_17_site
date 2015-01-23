@@ -1,0 +1,20 @@
+name
+industry deligate / student deligate/others
+title of the papers
+author  detials,[name,affliation, email] (+)
+email
+industry name/colg name
+
+################################################
+
+id
+first name
+last name
+type
+instutuion name (colg/industry)
+email
+title
+author_name
+author_affliation
+author_emial
+
