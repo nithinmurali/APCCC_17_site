@@ -8,6 +8,30 @@
     font-weight: normal;
     font-style: normal;
 }
+
+
+#drag-me {
+  width: 25%;
+  height: 100%;
+  margin: 10%;
+
+  background-color: #29e;
+  color: white;
+
+  border: solid 0.4em #666;
+  border-radius: 0.75em;
+  padding: 3%;
+
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+}
+
+#drag-me::before {
+  content: "#" attr(id);
+  color: #000;
+}
+
+
 #menu1{
     position: absolute;
     top: 1px;

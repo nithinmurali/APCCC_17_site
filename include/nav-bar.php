@@ -1,3 +1,8 @@
+        
+
+       <!--  <div id="drag-me" class="draggable">
+          <p> Click or touch and drag this element around </p>
+        </div> -->
     
 		<div class="menu" id="menu1" >
 			<ul class="ca-menu">

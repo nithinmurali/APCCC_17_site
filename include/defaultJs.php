@@ -1,7 +1,37 @@
 
 		<script type="text/javascript">
+
+
+
+	/*		if ( $(window).width() < 1500 ) {
+				
+			   	$(".menu").slideUp();
+				
+				$('.draggable').hide();
+				interact('.draggable')
+				  .draggable({
+				    // enable inertial throwing
+				    inertia: true,
+				    // keep the element within the area of it's parent
+				    restrict: {
+				      restriction: "parent",
+				      endOnly: true,
+				      elementRect: { top: 0, left: 0, bottom: 1, right: 1 }
+				    },
+
+				  });
+				
+			};
+
+*/
+
+
 			$(window).load(function() {
-			  
+			 /* 
+			  $("#drag-me").dblclick(function(){
+			   		$(".menu").slideToggle();
+			  });	
+*/
 			  $(".content").click(function(){
 			  	$(".has-sub").click();
 			  });
@@ -25,7 +55,8 @@
 					});
 */
 			  //-----------------------Menu Movement ---------------------------------//
-			    $('#menu1').css("left", ( $(".flexslider").offset().left)/3);
+			    $('#menu1').css("left", ( $(".flexslider").offset().left )/3);
+			    $('#menu2').css("right", ( ($(window).width()-($(".flexslider").offset().left + $(".flexslider").width()))/3 ) );
 			   
 				function moveFloatMenu() {
 					var menuOffset = menuYloc.top + $(this).scrollTop() + "px";

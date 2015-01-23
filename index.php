@@ -22,7 +22,7 @@
         <link rel="stylesheet" href="css/gallery_css.css"> 
         <!-- <link rel="stylesheet" type="text/css" href="css/style1.css" /> -->
         <link href='http://fonts.googleapis.com/css?family=Terminal+Dosis' rel='stylesheet' type='text/css' />
-
+        <!--<script type="text/javascript" src="js/interact-1.2.2.min.js" ></script>-->
 		<!-- <link type="text/css" href="css/menu.css" rel="stylesheet" /> -->
 	</head>
 
