@@ -36,7 +36,7 @@
 						
 			<div class="row" >
 				
-				<div class="col-md-12 middle content" >
+				<div class="col-md-12 middle content" style="height:1350px;" >
 					<? @include("content/home.html"); ?>
 				</div>
 				

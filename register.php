@@ -66,8 +66,8 @@
 					            <div class="pure-u-1 pure-u-md-1-3">
 					                <label for="type">Type</label>
 					                <select id="type" name = "type" class="pure-input-1-2">
-					                    <option>Industry Deligate</option>
-					                    <option>Student Deligate</option>
+					                    <option>Industry Delegate</option>
+					                    <option>Student Delegate</option>
 					                    <option>Others</option>
 					                </select>
 					            </div>
@@ -77,7 +77,7 @@
 					        <div class="pure-g">
 
 					            <div class="pure-u-1 pure-u-md-1-3">
-					                <label id="insti_name" for="colleageName">instution name</label>
+					                <label id="insti_name" for="colleageName">Instution Name</label>
 					                <input id="colleageNmae" name="colgName" type="text">
 					            </div>
 					            <div class="pure-u-1 pure-u-md-1-3">
@@ -92,7 +92,7 @@
 					        <div class="pure-g">
 
 					            <div class="pure-u-1 pure-u-md-1-3">
-					                <label for="title">Title of paper*</label>
+					                <label for="title">Title of the paper*</label>
 					                <input id="title" required name="title" type="text">
 					            </div>
 					            
@@ -209,9 +209,16 @@
 				onSuccess:function(files,data,xhr)
 				{
 					//alert(data);
-					alert("your paper sucessfully submitted");
 					//navigate to home
-					window.location.href = "index.php";
+			        var obj = jQuery.parseJSON(data);
+	                if (obj.err == 0) {
+	                	alert(obj.err);
+	                }
+	                else if (obj.err == 1) 
+	                {
+						alert("your paper sucessfully submitted");
+						window.location.href = "index.php";
+	                }
 				}
 
 				});
@@ -268,14 +275,14 @@
 				                } else
 				                {
 					                
-					                console.log("uploading");
+					                //console.log("uploading");
 					                uploadObj.startUpload(url1);
-					                alert("registred sucesfully");
+					                //alert("registred sucesfully");
 				                }
 				                console.log(data);
 				            },
 				            error: function(){
-				                  alert('error handing here');
+				                  alert('sorry couldnt, submit data');
 				            }
 				        });
 			});

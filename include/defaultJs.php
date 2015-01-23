@@ -132,9 +132,11 @@
 
 				$('.ispage').on('click','a',function(){
 
-					$('html, body').animate({
-				        scrollTop:'350' }, 500);
-
+					if ( $(window).scrollTop() > 400) {
+						console.log("moving");
+						$('html, body').animate({
+					        scrollTop:'350' }, 500);						
+					};
 					var text = $(this).find("h2").text();
 					text = text.toLowerCase();
 					console.log(text);

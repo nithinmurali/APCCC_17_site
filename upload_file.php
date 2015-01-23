@@ -7,15 +7,15 @@
 //echo "in upload";
 
 //print_r($_GET);
-
+@require("include/dbcon.php");
 $target_dir = "papers/";
-$first_name = $_GET['first_name'];
-$last_name = $_GET['last_name'];
-$title = $_GET['paper'];
-$target_file = $target_dir . $_GET['first_name']."-".$_GET['last_name']."-".$_GET['paper'].".". pathinfo( $target_dir. basename($_FILES["paper"]["name"]), PATHINFO_EXTENSION );
+$first_name = preg_replace("/[^[:alnum:][:space:]]/ui", '', $_GET['first_name']);
+$last_name = preg_replace("/[^[:alnum:][:space:]]/ui", '', $_GET['last_name']);
+$title = preg_replace("/[^[:alnum:][:space:]]/ui", '', $_GET['paper']);
+$target_file = $target_dir . $first_name."-".$last_name."-".$title.".". pathinfo( $target_dir. basename($_FILES["paper"]["name"]), PATHINFO_EXTENSION );
 $uploadOk = 1;
 $fileType = pathinfo($target_file,PATHINFO_EXTENSION);
-$errmsg = "none";
+$err = "none";
 
 $sql = "SELECT * FROM user_data where first_name = '$first_name' and last_name = '$last_name' and title = '$title' ";
 $result = $conn->query($sql);            
@@ -40,7 +40,8 @@ else
             $i++;
             if ($_GET['new'] == 1) {
                 $err = "new file saved";
-                $target_file = $target_dir . $_GET['first_name']."-".$_GET['last_name']."-".$_GET['paper'].$i.".". pathinfo( $target_dir. basename($_FILES["paper"]["name"]), PATHINFO_EXTENSION );
+                $target_file = $target_dir . $first_name."-".$last_name."-".$title.$i.".". pathinfo( $target_dir. basename($_FILES["paper"]["name"]), PATHINFO_EXTENSION );
+                
             }
         }else{
             
@@ -54,9 +55,10 @@ else
         $err = "Sorry, your file is too large.";
         $uploadOk = 0;
     }
+
     // Allow certain file formats
-    if($fileType != "pdf" || $fileType != "docx"|| $fileType != "doc" || $fileType != "odt" || $fileType != "rtf" || $fileType != "txt") {
-        $err = "Sorry, only PDF files are allowed. " . $target_file ;
+    if( !strcmp($fileType ,"pdf") && !strcmp($fileType ,"docx") &&  !strcmp($fileType ,"doc") && !strcmp($fileType ,"odt") && !strcmp($fileType ,"txt") &&  !strcmp($fileType ,"rtf") ) {
+        $err = "Sorry, file type not allowed are allowed. " . $target_file ;
         $uploadOk = 0;
     }
 
