@@ -1,6 +1,11 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
+	<title>APCCC 17</title>
+		
+		<meta name="description" content="APCCC 17 ... the official website of 17th APCCC">
+		<META NAME="KEYWORDS" CONTENT="apccc, apccc17, APCCC">
+
 		<script type="text/javascript" src="js/jquery.js" ></script>
 		<!-- <script type="text/javascript" src="js/menu.js" ></script> -->
 		<script type="text/javascript" src="js/jquery.flexslider-min.js" ></script>
@@ -36,7 +41,7 @@
 						
 			<div class="row" >
 				
-				<div class="col-md-12 middle content" style="height:1350px;" >
+				<div class="col-md-12 middle content" >
 					<? @include("content/home.html"); ?>
 				</div>
 				

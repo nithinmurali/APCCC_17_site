@@ -41,7 +41,7 @@
 		    $errmsg = "existing"; 
 		
 		} else {
-			$sql = "INSERT INTO user_data ( first_name, last_name, type, insti_name, email, title, presenting_author, author_name, author_affliation, author_email ) VALUES ( '$first_name', '$last_name', '$type', '$insti_name', '$email', '$title', '$presenting_author', '$author_name', '$author_affliation', '$author_email' )";
+			$sql = "INSERT INTO user_data ( first_name, last_name, type, insti_name, email, title, presenting_author,presentingType, author_name, author_affliation, author_email ) VALUES ( '$first_name', '$last_name', '$type', '$insti_name', '$email', '$title', '$presenting_author', '$presenting_type' , '$author_name', '$author_affliation', '$author_email' )";
 			if ($conn->query($sql) === TRUE) {
 			    $err=0;
 			} else {

@@ -45,7 +45,6 @@
 				<div class="col-md-12 middle content" style="padding:28px;height:900px;" >
 					    <fieldset>
 							
-							<span>Register </span>
 							<br><br>
 
 						<form name="detilsForm" action="#" method="POST" id="detilsForm" class="pure-form pure-form-stacked">
